@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Toko SPA</title>
+</head>
+<body>
+    <h2>Form Tambah Barang</h2>
+    
+    <form id="form-tambah">
+        <label>Nama Barang:</label>
+        <input type="text" name="nama_barang" required>
+        
+        <label>Harga:</label>
+        <input type="number" name="harga" required>
+        
+        <button type="submit">Simpan</button>
+    </form>
+
+    <hr>
+
+    <h2>Data Barang</h2>
+    <table border="1" width="50%" cellpadding="8" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Nama Barang</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody id="data-barang">
+            <tr>
+                <td colspan="2" style="text-align: center;">Memuat data...</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
